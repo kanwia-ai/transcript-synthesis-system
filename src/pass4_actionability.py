@@ -54,7 +54,7 @@ def add_actionability(frameworks_file: str, output_file: str, model: str = "clau
         )
 
         try:
-            response = client.call(model, prompt, max_tokens=4000)
+            response = client.call(model, prompt, max_tokens=8000)
 
             # Clean response
             response = response.strip()
