@@ -84,10 +84,101 @@
       "metrics": []
     },
     "actionability": {
-      "decision_tree": "Decision tree generation failed",
-      "implementation_checklist": [],
-      "decision_points": [],
-      "risk_mitigation": []
+      "decision_tree": "START: Assess learner engagement and relevance concerns\n\u251c\u2500 IF learners struggle to see relevance of content THEN\n\u2502  \u251c\u2500 Deploy Context Mapping Module first\n\u2502  \u2502  \u251c\u2500 IF learners work in diverse industries THEN\n\u2502  \u2502  \u2502  \u2514\u2500 Use industry-agnostic parallel identification \u2192 GOTO Use Case Discovery\n\u2502  \u2502  \u2514\u2500 IF learners share similar context THEN\n\u2502  \u2502     \u2514\u2500 Use domain-specific mapping templates \u2192 GOTO Use Case Discovery\n\u2502  \u2514\u2500 ELSE IF learners see relevance but lack specific applications THEN\n\u2502     \u2514\u2500 Skip to Use Case Discovery Engine directly\n\u251c\u2500 IF learners have identified use cases but struggle with adaptation THEN\n\u2502  \u2514\u2500 Deploy Application Bridge Builder\n\u2502     \u251c\u2500 IF gap is technical/skill-based THEN\n\u2502     \u2502  \u2514\u2500 Provide scaffolded skill-building pathway\n\u2502     \u2514\u2500 IF gap is contextual/environmental THEN\n\u2502        \u2514\u2500 Use constraint-mapping and workaround strategies\n\u2514\u2500 IF learners are engaged and generating applications independently THEN\n   \u2514\u2500 Transition to peer learning mode (framework as reference only)\n\nEVALUATION CHECKPOINT (every 30 min or module):\n\u251c\u2500 IF >70% learners have identified 2+ use cases THEN\n\u2502  \u2514\u2500 Proceed to implementation planning\n\u2514\u2500 IF <70% learners have identified use cases THEN\n   \u2514\u2500 RETURN to Context Mapping with additional scaffolding",
+      "implementation_checklist": [
+        "\u2610 Pre-session: Collect learner context data (roles, industries, current challenges)",
+        "\u2610 Pre-session: Prepare 3-5 diverse generic examples with clear underlying principles",
+        "\u2610 Pre-session: Create context mapping template appropriate for audience diversity",
+        "\u2610 Opening (5 min): Explain framework purpose and three-module structure",
+        "\u2610 Context Mapping (15-20 min): Guide learners through parallel identification exercise",
+        "\u2610 Context Mapping: Have learners document 2-3 parallels between examples and their work",
+        "\u2610 Validation checkpoint: Quick poll or show-of-hands on successful mapping",
+        "\u2610 Use Case Discovery (20-25 min): Introduce systematic discovery questions",
+        "\u2610 Use Case Discovery: Facilitate individual brainstorming with prompt sheet",
+        "\u2610 Use Case Discovery: Conduct pair-share to cross-pollinate ideas",
+        "\u2610 Use Case Discovery: Have each learner identify and document 2-3 specific use cases",
+        "\u2610 Application Bridge (20-30 min): Introduce adaptation framework (constraints, resources, scope)",
+        "\u2610 Application Bridge: Guide learners through gap analysis for their top use case",
+        "\u2610 Application Bridge: Provide scaffolding tools (templates, checklists, decision aids)",
+        "\u2610 Application Bridge: Have learners create 'first step' action plan",
+        "\u2610 Peer review: Pair learners to pressure-test each other's applications (10 min)",
+        "\u2610 Closing: Collect documented use cases for follow-up accountability",
+        "\u2610 Post-session: Schedule 1-2 week check-in for implementation support",
+        "\u2610 Post-session: Share repository of peer use cases (with permission) as ongoing resource"
+      ],
+      "decision_points": [
+        {
+          "question": "Should I use the full three-module framework or just selected components?",
+          "options": [
+            "Full framework (60-75 minutes)",
+            "Context Mapping + Discovery only (35-45 minutes)",
+            "Discovery + Bridge only (40-55 minutes)",
+            "Context Mapping only (20-25 minutes)"
+          ],
+          "criteria": "Use FULL if: (a) new/abstract content, (b) diverse audience, (c) implementation expected soon. Use PARTIAL if: (a) audience already sees relevance (skip mapping), (b) time-constrained (prioritize discovery), (c) content is concrete/intuitive (skip/shorten mapping), (d) implementation is distant (skip bridge, focus on awareness)"
+        },
+        {
+          "question": "Should learners work individually, in pairs, or in small groups?",
+          "options": [
+            "Individual work throughout",
+            "Individual then pair-share",
+            "Small groups (3-4) collaborative",
+            "Hybrid: individual mapping, group discovery, individual bridge"
+          ],
+          "criteria": "Choose INDIVIDUAL if: contexts are highly specialized or confidential. Choose PAIR-SHARE if: moderate diversity and peer learning is valuable. Choose SMALL GROUPS if: contexts overlap significantly and collaboration enhances creativity. Choose HYBRID (recommended) if: you want both deep personal relevance and cross-pollination of ideas"
+        },
+        {
+          "question": "How detailed should the context mapping be?",
+          "options": [
+            "High-level conceptual parallels only",
+            "Moderate detail with structural similarities",
+            "Deep detail including workflows, stakeholders, constraints"
+          ],
+          "criteria": "Use HIGH-LEVEL if: (a) time is limited (<15 min for mapping), (b) content principles are highly transferable, (c) audience is experienced and can self-extrapolate. Use MODERATE (recommended) if: (a) adequate time (15-20 min), (b) mixed experience levels, (c) principles require some adaptation. Use DEEP DETAIL if: (a) content is complex/technical, (b) implementation risks are high, (c) accountability for application is strong"
+        },
+        {
+          "question": "What if learners identify use cases that are outside the intended scope of the training?",
+          "options": [
+            "Redirect to intended scope",
+            "Validate and note for future content",
+            "Allow exploration if relevant to learner goals",
+            "Use as advanced/stretch applications"
+          ],
+          "criteria": "REDIRECT if: (a) divergence would confuse core learning objectives, (b) it's based on misunderstanding of content. VALIDATE & NOTE if: (a) it's legitimate but beyond current scope, (b) you want to encourage creativity while maintaining focus. ALLOW EXPLORATION if: (a) time permits, (b) learner autonomy is a program value, (c) it doesn't derail group progress. STRETCH APPLICATION if: (a) it represents advanced application, (b) it can inspire others without confusing beginners"
+        },
+        {
+          "question": "How do I handle learners who claim 'this doesn't apply to my work at all'?",
+          "options": [
+            "Use one-on-one coaching during activity time",
+            "Provide alternative examples from their domain",
+            "Partner them with someone in similar role who has found applications",
+            "Escalate to underlying principles/transferable skills level"
+          ],
+          "criteria": "Use ONE-ON-ONE if: (a) it's only 1-2 learners, (b) you have facilitation support or activity time. Use ALTERNATIVE EXAMPLES if: (a) you have domain examples prepared, (b) their context is genuinely unique. Use PEER PARTNERING if: (a) another learner has successfully bridged similar context, (b) peer learning is culturally appropriate. Use PRINCIPLES ESCALATION (often most effective) if: (a) they're stuck on surface features, (b) abstracting to transferable skills would help, (c) it models meta-cognitive approach for entire group"
+        },
+        {
+          "question": "When should I provide my own use case examples versus having learners generate all of them?",
+          "options": [
+            "Provide 2-3 seed examples across different contexts first",
+            "Have learners generate first, then supplement gaps",
+            "Provide examples only if learners struggle after 10 minutes",
+            "Co-create examples in real-time with learner input"
+          ],
+          "criteria": "SEED EXAMPLES FIRST (recommended) if: (a) content is new/complex, (b) learners need activation/priming, (c) you want to show range of possibilities. LEARNERS FIRST if: (a) content is intuitive, (b) group is experienced/creative, (c) ownership is critical for buy-in. PROVIDE IF STRUGGLING if: (a) you want to maximize learner agency, (b) you can monitor and intervene quickly. CO-CREATE (highly effective) if: (a) time permits, (b) you want to model thinking process, (c) building one detailed example is more valuable than many shallow ones"
+        }
+      ],
+      "risk_mitigation": [
+        "Risk: Learners identify surface-level similarities without deeper understanding \u2192 Mitigation: In Context Mapping, require identification of underlying principles/mechanisms, not just topical parallels. Use 'Why does this example work?' question to drive deeper analysis.",
+        "Risk: Time runs over as learners get engaged in discovery process \u2192 Mitigation: Build in visible timers, use 'parking lot' for ideas to explore later, prepare 'minimum viable' and 'extended' versions of each module, establish clear time boxes with 2-minute warnings.",
+        "Risk: Wide context diversity makes peer sharing less valuable \u2192 Mitigation: Structure sharing around transferable principles rather than specific applications, create 'industry/role pods' for relevant peer groups, focus peer discussion on adaptation strategies rather than specific use cases.",
+        "Risk: Learners generate unrealistic use cases beyond their authority/resources \u2192 Mitigation: In Application Bridge, explicitly include 'constraint mapping' (authority, resources, time, skills), introduce 'first step' thinking ('what's one thing you could try next week?'), validate ambition while grounding in feasibility.",
+        "Risk: Framework feels too structured and limits creative thinking \u2192 Mitigation: Present as 'thinking scaffold' not rigid process, allow learners to jump ahead if they have insights, create space for serendipitous connections, use 'structured brainstorming' approach (diverge then converge).",
+        "Risk: Some learners finish much faster than others \u2192 Mitigation: Prepare extension prompts ('identify a 4th use case for a colleague', 'what would make this even more impactful?'), enable finished learners to peer coach, have advanced reflection questions ready, build in flexible transition periods.",
+        "Risk: Applications identified but never implemented post-training \u2192 Mitigation: Collect documented use cases before leaving, establish accountability partnerships during session, schedule follow-up check-in (email, meeting, or platform), share peer application repository to maintain momentum, integrate into manager check-ins if organizational program.",
+        "Risk: Framework becomes mechanical and disconnects from learning content \u2192 Mitigation: Explicitly link each framework step back to specific learning content/examples, weave framework into content delivery rather than separate section, use facilitator language like 'notice how this principle...' to maintain connection, test framework timing with pilot group to ensure organic flow.",
+        "Risk: Introverted or hesitant learners don't engage fully with peer sharing components \u2192 Mitigation: Offer written/digital sharing options alongside verbal, use structured protocols for pair work (clear roles, turn-taking), validate multiple participation styles, provide individual reflection before any sharing, create psychologically safe framing ('rough drafts', 'thinking out loud').",
+        "Risk: Use cases identified are too similar across the group (lack of diversity) \u2192 Mitigation: During Discovery, explicitly prompt for different scopes (quick wins vs. long-term), different stakeholders (internal vs. external), different types (efficiency vs. innovation vs. quality), use 'What else?' prompts to push beyond first ideas, invite contrarian/edge case thinking."
+      ]
     }
   },
   {
@@ -178,10 +269,157 @@
       "metrics": []
     },
     "actionability": {
-      "decision_tree": "Decision tree generation failed",
-      "implementation_checklist": [],
-      "decision_points": [],
-      "risk_mitigation": []
+      "decision_tree": "IF new workshop request received THEN\n  IF client relationship is new (< 6 months) THEN\n    \u2192 Conduct extended discovery (3-5 sessions)\n    \u2192 Include stakeholder mapping\n    \u2192 Request previous workshop examples they valued\n  ELSE IF existing client relationship THEN\n    \u2192 Conduct focused discovery (1-2 sessions)\n    \u2192 Reference previous workshop feedback\n    \u2192 Validate any changed expectations\n  END IF\n  \n  IF discovery reveals unclear objectives THEN\n    \u2192 Pause content development\n    \u2192 Schedule objectives clarification session\n    \u2192 Use structured questioning framework\n  ELSE IF objectives are clear THEN\n    \u2192 Proceed to Content Architecture phase\n  END IF\n  \n  IF client provides reference materials THEN\n    \u2192 Analyze terminology, frameworks, and visual styles\n    \u2192 Mirror identified patterns in initial draft\n  ELSE IF no reference materials provided THEN\n    \u2192 Request examples during discovery\n    \u2192 Create 2-3 style options for first review\n  END IF\n  \n  IF budget allows >= 3 review cycles THEN\n    \u2192 Use full iterative refinement process\n    \u2192 Schedule: draft \u2192 review \u2192 revision \u2192 validation \u2192 final\n  ELSE IF budget allows 1-2 review cycles THEN\n    \u2192 Conduct additional discovery upfront\n    \u2192 Use structured feedback forms\n    \u2192 Combine review cycles strategically\n  END IF\n  \n  IF feedback indicates misalignment THEN\n    \u2192 Conduct root cause analysis session\n    \u2192 Revisit discovery findings\n    \u2192 Propose structural changes before detail refinement\n  ELSE IF feedback is detail-oriented THEN\n    \u2192 Proceed with standard refinement\n  END IF",
+      "implementation_checklist": [
+        "\u2610 Phase 0: Intake & Scoping",
+        "\u2610 Document initial request and stated objectives",
+        "\u2610 Identify primary stakeholder and decision-maker(s)",
+        "\u2610 Establish timeline, budget, and review cycle constraints",
+        "\u2610 Determine success metrics for the workshop",
+        "\u2610 Phase 1: Discovery",
+        "\u2610 Schedule and conduct discovery session(s)",
+        "\u2610 Map participant audience (roles, experience levels, expectations)",
+        "\u2610 Identify explicit requirements (topics, duration, format)",
+        "\u2610 Uncover implicit requirements (cultural preferences, learning styles)",
+        "\u2610 Request and analyze reference materials or past workshops",
+        "\u2610 Document constraints (technical, logistical, political)",
+        "\u2610 Clarify what success looks like from client's perspective",
+        "\u2610 Identify potential objections or resistance points",
+        "\u2610 Create discovery summary document for client validation",
+        "\u2610 Phase 2: Content Architecture",
+        "\u2610 Define workshop learning objectives aligned with client goals",
+        "\u2610 Create content outline matching client's mental models",
+        "\u2610 Design information flow (sequence and pacing)",
+        "\u2610 Select activity types matching audience preferences",
+        "\u2610 Develop visual style guide based on client materials",
+        "\u2610 Map content to time allocations",
+        "\u2610 Identify facilitation approach and tone",
+        "\u2610 Create preliminary materials framework (slides, handouts, activities)",
+        "\u2610 Build in flexibility points for real-time adaptation",
+        "\u2610 Prepare architecture review deck for client",
+        "\u2610 Phase 3: Iterative Refinement - Cycle 1",
+        "\u2610 Develop first complete draft of all materials",
+        "\u2610 Conduct internal review against discovery findings",
+        "\u2610 Schedule structured feedback session with client",
+        "\u2610 Present materials with explicit connection to stated requirements",
+        "\u2610 Use feedback capture framework (content, structure, style, delivery)",
+        "\u2610 Identify alignment gaps and prioritize changes",
+        "\u2610 Document requested changes with rationale",
+        "\u2610 Phase 3: Iterative Refinement - Cycle 2",
+        "\u2610 Implement prioritized changes from Cycle 1",
+        "\u2610 Validate changes address root issues (not just symptoms)",
+        "\u2610 Prepare change summary showing before/after",
+        "\u2610 Conduct second review focusing on refinements",
+        "\u2610 Capture additional feedback and edge cases",
+        "\u2610 Assess remaining alignment gaps",
+        "\u2610 Phase 3: Iterative Refinement - Final Cycle",
+        "\u2610 Implement final refinements",
+        "\u2610 Conduct polish pass (consistency, branding, quality)",
+        "\u2610 Prepare facilitator guide with delivery notes",
+        "\u2610 Create participant materials in final format",
+        "\u2610 Conduct final validation session",
+        "\u2610 Obtain formal sign-off from decision-maker",
+        "\u2610 Phase 4: Delivery Preparation",
+        "\u2610 Brief facilitator(s) on client context and sensitivities",
+        "\u2610 Prepare contingency materials for timing variations",
+        "\u2610 Test all technology and interactive elements",
+        "\u2610 Confirm logistics and materials delivery",
+        "\u2610 Phase 5: Post-Delivery",
+        "\u2610 Gather immediate participant feedback",
+        "\u2610 Conduct debrief with client stakeholders",
+        "\u2610 Document what worked well and what to adjust",
+        "\u2610 Update framework knowledge base with lessons learned",
+        "\u2610 Archive final materials for future reference"
+      ],
+      "decision_points": [
+        {
+          "question": "How much discovery is sufficient before starting content development?",
+          "options": [
+            "Minimal discovery (1 conversation, move quickly to draft)",
+            "Standard discovery (2-3 structured sessions)",
+            "Extended discovery (multiple sessions with various stakeholders)"
+          ],
+          "criteria": "Choose based on: (1) Relationship maturity - new clients need extended discovery; (2) Project complexity - multiple stakeholders or ambiguous goals require more discovery; (3) Risk tolerance - high-stakes workshops justify extended discovery; (4) Budget constraints - limited budgets may need front-loaded discovery to minimize revision cycles. RED FLAG: If objectives cannot be clearly articulated after first session, always extend discovery before content development."
+        },
+        {
+          "question": "Should I create multiple content approach options or develop one aligned direction?",
+          "options": [
+            "Single approach based on discovery insights",
+            "2-3 style/format variations for client selection",
+            "Modular components that can be mixed-and-matched"
+          ],
+          "criteria": "Choose based on: (1) Client decision-making style - analytical clients may appreciate options; decisive clients prefer recommendations; (2) Clarity of requirements - vague requirements benefit from options; clear requirements warrant single approach; (3) Budget availability - multiple approaches require more development time; (4) Timeline pressure - tight timelines favor single focused approach. RECOMMENDATION: For new clients with unclear preferences, develop 1 full approach + 2 alternative examples of key sections."
+        },
+        {
+          "question": "When should I push back on client feedback versus accommodate it?",
+          "options": [
+            "Accommodate all feedback to maintain relationship",
+            "Challenge feedback that contradicts best practices",
+            "Negotiate compromise solutions"
+          ],
+          "criteria": "Push back when: (1) Feedback contradicts their stated objectives; (2) Request would reduce workshop effectiveness based on learning science; (3) Change creates participant confusion or cognitive overload; (4) Feedback from secondary stakeholder conflicts with primary decision-maker's direction. Accommodate when: (1) Change reflects cultural or organizational norms you missed; (2) Request reveals unstated but legitimate requirement; (3) Feedback improves alignment without reducing effectiveness. APPROACH: Present concerns as questions - 'Help me understand how this change supports [their stated goal]' rather than direct challenges."
+        },
+        {
+          "question": "How many refinement cycles should be planned?",
+          "options": [
+            "Single review and finalize (2 versions total)",
+            "Standard iterative cycle (3 versions: draft, revision, final)",
+            "Extended refinement (4+ versions with incremental improvements)"
+          ],
+          "criteria": "Determine based on: (1) Discovery depth - thorough discovery enables fewer cycles; rushed discovery requires more; (2) Stakeholder complexity - multiple reviewers need more cycles for alignment; (3) Content novelty - innovative approaches need validation cycles; standard content needs fewer; (4) Client revision history - track if client typically needs many or few changes. BUDGET RULE: Allocate 30-40% of total project hours to refinement cycles. QUALITY THRESHOLD: Require at least 2 cycles (draft + revision) regardless of budget."
+        },
+        {
+          "question": "Should workshop materials be text-heavy or visual-heavy?",
+          "options": [
+            "Detailed text for self-study and reference",
+            "Minimal text with strong visual emphasis",
+            "Balanced approach with visual hierarchy"
+          ],
+          "criteria": "Choose based on: (1) Client reference materials style - mirror their existing materials; (2) Participant audience - technical audiences may prefer detailed text; creative audiences prefer visuals; (3) Workshop purpose - behavior change favors visuals and activities; knowledge transfer may need more text; (4) Standalone usage - materials used without facilitator need more text. DISCOVERY PROBE: Ask client to share 2-3 presentation/workshop materials they consider excellent and analyze the text/visual balance."
+        },
+        {
+          "question": "When is architecture/outline review necessary versus going straight to full draft?",
+          "options": [
+            "Always review architecture before full development",
+            "Skip outline review for simple/short workshops",
+            "Use outline review only for new clients or complex topics"
+          ],
+          "criteria": "Require architecture review when: (1) Workshop > 3 hours duration; (2) New client relationship; (3) Innovative or unfamiliar content structure; (4) Multiple stakeholders with approval authority; (5) Limited refinement cycles budgeted. Skip directly to draft when: (1) Repeating proven workshop structure; (2) < 2 hour workshop; (3) Single stakeholder with clear vision; (4) Multiple refinement cycles available. RISK MITIGATION: Architecture review prevents wasted development effort on wrong direction - 2 hours of outline review can save 20 hours of redevelopment."
+        },
+        {
+          "question": "How should conflicting feedback from multiple stakeholders be resolved?",
+          "options": [
+            "Default to primary decision-maker's preference",
+            "Seek consensus through facilitated discussion",
+            "Present tradeoffs and let client choose",
+            "Implement changes that satisfy both perspectives"
+          ],
+          "criteria": "Resolution approach: (1) Clarify decision-making authority during discovery - who has final say?; (2) Analyze if conflict is stylistic (compromise possible) or substantive (requires decision); (3) Present conflicts as design tradeoffs with implications - 'Approach A achieves X but sacrifices Y; Approach B prioritizes Y but limits X'; (4) Facilitate alignment meeting if stakeholders have equal authority; (5) Document final decision and rationale to prevent reopening. PREVENTION: Establish single 'content owner' during intake who consolidates stakeholder input before feedback sessions."
+        },
+        {
+          "question": "Should activities be prescriptive (detailed instructions) or flexible (facilitator-adapted)?",
+          "options": [
+            "Highly prescriptive with specific timing and instructions",
+            "Flexible frameworks with facilitator discretion",
+            "Hybrid with core structure and adaptation options"
+          ],
+          "criteria": "Choose based on: (1) Facilitator experience - less experienced needs prescriptive; seasoned facilitators prefer flexibility; (2) Content sensitivity - complex or sensitive topics need more structure; (3) Audience predictability - consistent audiences enable prescription; diverse audiences need flexibility; (4) Client control preference - risk-averse clients prefer prescriptive; adaptive cultures prefer flexibility. RECOMMENDATION: Provide prescriptive baseline with clearly marked 'facilitation choice points' where adaptation is appropriate."
+        }
+      ],
+      "risk_mitigation": [
+        "Risk: Scope creep during discovery \u2192 Mitigation: Set discovery session time limits and agenda; document new requirements as 'future enhancements' or change requests with budget implications; establish upfront what's in/out of scope",
+        "Risk: Misaligned expectations after discovery \u2192 Mitigation: Create written discovery summary with explicit assumptions for client validation before content development; use client's language verbatim in summary; obtain written confirmation of understanding",
+        "Risk: Late-stage fundamental changes \u2192 Mitigation: Conduct architecture review before full development; require sign-off at each phase; implement change request process after first full draft with timeline/budget impacts",
+        "Risk: Feedback that contradicts earlier decisions \u2192 Mitigation: Reference previous decisions and rationale when presenting revisions; maintain decision log throughout project; ask 'what's changed?' when contradictory feedback emerges",
+        "Risk: Silent stakeholder who provides critical feedback late \u2192 Mitigation: Map all stakeholders during discovery; establish review process including who reviews when; send review invitations to all stakeholders even if not expected to attend",
+        "Risk: Client unavailable for scheduled reviews \u2192 Mitigation: Build buffer time into project timeline; establish backup reviewers; set clear deadlines for feedback with 'proceed assumption' if not received; charge for delays beyond X days",
+        "Risk: Workshop materials don't match organizational culture \u2192 Mitigation: Request existing internal materials during discovery; ask about communication norms and taboos; test sample content/examples in first review; include culture fit in feedback framework",
+        "Risk: Technical requirements discovered late \u2192 Mitigation: Include technology/logistics audit in discovery checklist; test platform capabilities early; build contingency versions (tech-enhanced and low-tech backup)",
+        "Risk: Over-refinement and diminishing returns \u2192 Mitigation: Set maximum refinement cycles upfront; establish 'good enough' threshold; present completion confidence assessment at each cycle; recommend proceeding when changes become purely preferential rather than substantive",
+        "Risk: Facilitator unprepared for custom content \u2192 Mitigation: Create detailed facilitator guide with client context, sensitivities, and rationale for design choices; conduct facilitator briefing session; include timing notes and facilitation tips; provide contact for last-minute questions",
+        "Risk: Content too complex or too simple for audience \u2192 Mitigation: Validate audience assumptions during discovery with specific examples; request audience member input if possible; test activity complexity in early review; build difficulty calibration points into workshop design",
+        "Risk: Client feedback focuses on cosmetic issues while structural problems exist \u2192 Mitigation: Direct feedback with structured questions ('Does this sequence achieve your goals?'); present major structural elements before detailed content; ask explicitly about alignment with objectives before discussing formatting"
+      ]
     }
   },
   {
@@ -272,10 +510,140 @@
       "metrics": []
     },
     "actionability": {
-      "decision_tree": "Decision tree generation failed",
-      "implementation_checklist": [],
-      "decision_points": [],
-      "risk_mitigation": []
+      "decision_tree": "IF meeting requires decision-making or strategic discussion THEN consider silent document review framework ELSE use standard meeting format\n\nIF considering silent document review THEN evaluate:\n  IF topic is complex AND requires shared context AND participants have varying knowledge levels THEN proceed with framework\n  ELSE IF topic requires real-time brainstorming OR is purely status update THEN use alternative format\n\nIF proceeding with framework THEN:\n  IF meeting duration < 45 minutes THEN reschedule for longer slot OR reduce scope\n  ELSE continue planning\n\nIF planning document THEN:\n  IF document can be written in narrative form with clear decision points THEN use 6-page maximum format\n  ELSE IF highly technical/data-heavy THEN use structured format with executive summary\n\nIF determining review time THEN:\n  IF document is 1-2 pages THEN allocate 5-10 minutes\n  ELSE IF document is 3-4 pages THEN allocate 15-20 minutes\n  ELSE IF document is 5-6 pages THEN allocate 25-30 minutes\n\nIF participant hasn't finished reading THEN:\n  IF 80%+ have finished THEN allow 2-3 more minutes\n  ELSE IF majority still reading THEN extend by 5-minute increments\n\nIF discussion stalls THEN:\n  IF participants unclear on content THEN clarify specific sections\n  ELSE IF waiting for senior person to speak THEN use round-robin approach\n  ELSE IF off-topic THEN redirect to document decision points",
+      "implementation_checklist": [
+        "\u2610 Confirm meeting objective requires informed decision-making or strategic discussion",
+        "\u2610 Verify sufficient meeting time available (minimum 45 minutes for framework to be effective)",
+        "\u2610 Identify document author/owner responsible for preparation",
+        "\u2610 Draft comprehensive document covering: context, background, analysis, options, recommendation",
+        "\u2610 Structure document with clear headers, decision points highlighted, and supporting data included",
+        "\u2610 Limit document to 6 pages maximum (excluding appendices)",
+        "\u2610 Include executive summary at top with key decision to be made",
+        "\u2610 Add page numbers and section references for easy discussion navigation",
+        "\u2610 Distribute document AT THE MEETING (not before) to ensure simultaneous review",
+        "\u2610 Prepare printed copies for all participants plus 2 extras",
+        "\u2610 Send calendar invite with clear instructions: 'First 20 minutes will be silent reading, no pre-reading required'",
+        "\u2610 Book meeting room with no windows/minimal distractions if possible",
+        "\u2610 Prepare timer/clock for review period",
+        "\u2610 Arrange seating to minimize distractions during silent period",
+        "\u2610 Prepare discussion guide with 3-5 key questions to prompt dialogue",
+        "\u2610 Designate facilitator (ideally not the document author)",
+        "\u2610 Designate note-taker for decisions and action items",
+        "\u2610 Test any required technology before meeting",
+        "\u2610 Prepare backup plan if key decision-maker cannot attend",
+        "\u2610 Create decision documentation template to complete during meeting",
+        "\u2610 Schedule follow-up communication for outcomes within 24 hours"
+      ],
+      "decision_points": [
+        {
+          "question": "Should we distribute the document before the meeting?",
+          "options": [
+            "No - distribute at meeting start (recommended)",
+            "Yes - distribute 30 minutes before for remote participants only",
+            "Yes - distribute days before"
+          ],
+          "criteria": "Distribute AT MEETING to ensure equal footing and actual reading. Pre-distribution often results in skimming, non-reading, or unequal preparation. Exception: remote participants may need 30-min advance access for technology setup, but instruct them NOT to read until meeting begins."
+        },
+        {
+          "question": "How long should the silent reading period be?",
+          "options": [
+            "5-10 minutes for 1-2 pages",
+            "15-20 minutes for 3-4 pages",
+            "25-30 minutes for 5-6 pages"
+          ],
+          "criteria": "Base on document length and complexity. Assume average reading speed of 200-250 words/minute. Allow time for comprehension, not just reading. Better to over-allocate than rush. Watch participants' body language; extend if majority still actively reading."
+        },
+        {
+          "question": "What if a key participant arrives late?",
+          "options": [
+            "Start their reading period from arrival (delay discussion start)",
+            "Provide 5-minute summary and proceed",
+            "Reschedule the meeting"
+          ],
+          "criteria": "If late by <5 minutes AND non-decision-maker: proceed as scheduled. If late by 5-10 minutes OR decision-maker: give abbreviated reading time (50% of planned) then start discussion. If late by >10 minutes: reschedule meeting as framework integrity is compromised."
+        },
+        {
+          "question": "Should the document author facilitate the discussion?",
+          "options": [
+            "No - use independent facilitator (recommended)",
+            "Yes - author facilitates and presents",
+            "Hybrid - author clarifies, facilitator guides discussion"
+          ],
+          "criteria": "Independent facilitator is ideal to maintain objectivity and allow author to answer questions. If unavailable, use hybrid model where facilitator drives process and author provides clarification only when asked. Avoid having author present/pitch, as this defeats the framework's purpose."
+        },
+        {
+          "question": "What document format should we use?",
+          "options": [
+            "Narrative prose (Amazon-style 6-pager)",
+            "Structured sections with bullet points",
+            "Hybrid: Executive summary + detailed sections",
+            "Data-heavy with charts and minimal text"
+          ],
+          "criteria": "For strategic decisions: use narrative prose to tell complete story. For technical decisions: use structured format with executive summary. For data-driven decisions: lead with insights/recommendations, support with visuals. Always include: situation overview, complicating factors, analysis, options considered, recommendation, and decision required."
+        },
+        {
+          "question": "How do we handle participants who finish reading early?",
+          "options": [
+            "Allow them to review their notes",
+            "Ask them to re-read key sections",
+            "End reading period early if 80%+ finished"
+          ],
+          "criteria": "Encourage early finishers to review decision points, formulate questions, or re-read complex sections. Never end reading period before 80% have finished. Maintain silence during entire period - no side conversations. Consider this processing time, not wasted time."
+        },
+        {
+          "question": "What if we don't reach a decision during the meeting?",
+          "options": [
+            "Schedule immediate follow-up with same participants",
+            "Document open questions and assign research owners",
+            "Extend current meeting by 15-30 minutes",
+            "Empower smaller group to decide offline"
+          ],
+          "criteria": "First, identify why: lack of information, need for additional stakeholders, or fundamental disagreement? If information gap: assign research tasks and reconvene within 48 hours. If stakeholder gap: schedule smaller follow-up. If disagreement: escalate to decision-maker or use decision-making framework (voting, consensus, etc.). Document all progress made and specific remaining decisions."
+        },
+        {
+          "question": "Should we allow devices during silent reading period?",
+          "options": [
+            "No devices - printed documents only (recommended)",
+            "Devices allowed for document access only",
+            "Devices allowed with honor system"
+          ],
+          "criteria": "Printed documents strongly recommended to eliminate distractions and multitasking. If remote/hybrid: request participants close all applications except document viewer. For sensitive/confidential info: use printed copies collected after meeting. Device policy should be stated in calendar invite."
+        },
+        {
+          "question": "How do we structure the discussion phase?",
+          "options": [
+            "Open discussion - organic conversation",
+            "Round-robin - each person shares perspective",
+            "Q&A format - questions to author first",
+            "Structured agenda - predetermined discussion points"
+          ],
+          "criteria": "Start with clarifying questions (5 min) to ensure shared understanding. Then structured discussion of key decision points in document order. Use round-robin for first contributions to avoid groupthink. Transition to open discussion once all voices heard. End with explicit decision documentation and next steps."
+        },
+        {
+          "question": "What size group is appropriate for this framework?",
+          "options": [
+            "Small: 3-6 people",
+            "Medium: 7-12 people",
+            "Large: 13-20 people",
+            "Very large: 20+ people"
+          ],
+          "criteria": "Optimal: 6-10 people for robust discussion where everyone can contribute. Workable: 3-15 people. Not recommended: 15+ people (discussion becomes unwieldy; consider breaking into smaller groups or using alternative format). If >12 people, use strict facilitation and round-robin to ensure participation."
+        }
+      ],
+      "risk_mitigation": [
+        "Risk: Participants skim rather than read thoroughly | Mitigation: Set clear expectations in invite, facilitator monitors room during reading, ask detailed questions at discussion start to gauge comprehension, consider spot-checking understanding before proceeding",
+        "Risk: Document is too long or complex to absorb | Mitigation: Enforce 6-page maximum, use clear structure with headers, include executive summary, test document on colleague not familiar with topic, aim for clarity over comprehensiveness",
+        "Risk: Silence feels awkward or uncomfortable for participants | Mitigation: Explain framework rationale in advance, facilitator models comfort with silence, communicate that this is thinking time not wasted time, acknowledge it may feel unusual initially",
+        "Risk: Senior leaders dominate discussion despite equal preparation | Mitigation: Use round-robin for first round of input, facilitator actively solicits junior voices first, create psychologically safe environment by having leader speak last, document author remains neutral",
+        "Risk: Discussion goes off-topic or gets stuck on minor details | Mitigation: Facilitator redirects to document's decision points, use parking lot for tangential items, keep decision objective visible, time-box discussion sections, prepare key questions in advance",
+        "Risk: No decision reached despite preparation | Mitigation: Clearly identify decision-maker at meeting start, set explicit decision deadline before meeting ends, document areas of agreement vs. disagreement, identify specific blockers and assign owners",
+        "Risk: Remote participants have inferior experience | Mitigation: Use high-quality video conferencing, send digital document at exact meeting start time, explicitly check in with remote participants, use collaboration tools for annotations, consider all-remote format if hybrid",
+        "Risk: Document quality is poor and wastes meeting time | Mitigation: Establish document template and quality standards, require review by peer before meeting, author tests document on neutral party, include review checklist (decision clear? Options analyzed? Data included?)",
+        "Risk: Participants arrive unprepared for framework | Mitigation: Include clear instructions in calendar invite, send reminder 24 hours before with what to expect, facilitator explains process at meeting start, emphasize no pre-reading required",
+        "Risk: Meeting time is insufficient | Mitigation: Calculate minimum time needed (reading time + 1.5x discussion time + 10 min buffer), schedule 60-90 minute blocks minimum, have facilitator manage time actively, be willing to schedule continuation if productive",
+        "Risk: Confidential information in document isn't controlled | Mitigation: Use printed copies collected at end, classify document appropriately, track distribution, consider watermarking, brief participants on handling, use secure document viewer for digital versions",
+        "Risk: Framework becomes ritual without value | Mitigation: Regularly assess whether decisions improve, gather participant feedback, adapt format based on team needs, only use for appropriate meeting types, measure decision quality and velocity over time"
+      ]
     }
   },
   {
@@ -364,10 +732,104 @@
       "metrics": []
     },
     "actionability": {
-      "decision_tree": "Decision tree generation failed",
-      "implementation_checklist": [],
-      "decision_points": [],
-      "risk_mitigation": []
+      "decision_tree": "IF [organization has completed AI training programs] AND [less than 30% of trained employees actively using AI in their work] THEN [Apply Use Case Desert Framework] ELSE [Address foundational AI literacy first]\n\nIF [proficiency-application gap > 50%] THEN [Start with Component 1: Gap Analysis] ELSE IF [gap 20-50%] THEN [Begin with Component 2: Use Case Cultivation]\n\nIF [gap analysis reveals knowledge barriers] THEN [Supplement with targeted practical training] ELSE IF [reveals organizational barriers] THEN [Address governance/infrastructure issues first]\n\nIF [use case cultivation identifies >10 potential applications] THEN [Prioritize using business impact matrix] ELSE IF [<5 use cases identified] THEN [Expand discovery methods and stakeholder engagement]\n\nIF [selected use case requires new tools/infrastructure] THEN [Route through IT procurement pathway] ELSE IF [works with existing tools] THEN [Fast-track to acceleration pipeline]\n\nIF [pilot implementation succeeds with measurable ROI] THEN [Scale through replication playbook] ELSE IF [fails with learning insights] THEN [Document and iterate with adjacent use case]\n\nIF [3+ successful implementations achieved] THEN [Establish center of excellence] ELSE [Continue acceleration pipeline with next priority use cases]",
+      "implementation_checklist": [
+        "\u2610 Conduct baseline assessment: Survey AI literacy levels across departments",
+        "\u2610 Measure current state: Document all active AI implementations and usage rates",
+        "\u2610 Calculate proficiency-application gap percentage by team/department",
+        "\u2610 Identify barriers: Interview 10-15 employees about obstacles to AI application",
+        "\u2610 Map organizational readiness: Assess infrastructure, governance, and cultural factors",
+        "\u2610 Establish use case discovery team with cross-functional representation",
+        "\u2610 Design discovery workshops: Schedule 3-5 sessions with different business units",
+        "\u2610 Create use case submission template with business value criteria",
+        "\u2610 Run discovery workshops focusing on pain points and workflow inefficiencies",
+        "\u2610 Collect 20-30 potential use cases through workshops and open submission",
+        "\u2610 Score use cases using impact-feasibility matrix (technical, business, resource dimensions)",
+        "\u2610 Select top 3-5 use cases for pilot implementation",
+        "\u2610 Assign executive sponsor and implementation owner for each use case",
+        "\u2610 Develop success metrics and measurement framework for each pilot",
+        "\u2610 Create implementation timeline with 30-60-90 day milestones",
+        "\u2610 Establish weekly stand-ups for pilot tracking and blocker resolution",
+        "\u2610 Secure necessary resources: budget, tools, personnel time allocation",
+        "\u2610 Build minimal viable implementation for first use case within 30 days",
+        "\u2610 Gather user feedback through structured evaluation at 2-week intervals",
+        "\u2610 Document learnings, best practices, and replication playbook",
+        "\u2610 Communicate early wins through internal channels and leadership updates",
+        "\u2610 Scale successful pilots and retire unsuccessful ones with lessons learned",
+        "\u2610 Establish ongoing use case pipeline with quarterly discovery cycles",
+        "\u2610 Create AI champions network to sustain momentum and share knowledge",
+        "\u2610 Review and refresh framework quarterly based on organizational evolution"
+      ],
+      "decision_points": [
+        {
+          "question": "Should we focus on depth (few use cases, fully implemented) or breadth (many experiments, lower completion)?",
+          "options": [
+            "Depth approach: 2-3 use cases with full implementation and ROI measurement",
+            "Breadth approach: 8-10 lightweight experiments with rapid testing"
+          ],
+          "criteria": "Choose DEPTH if: organization values proven ROI, has resource constraints, or needs confidence-building wins. Choose BREADTH if: innovation culture exists, learning is prioritized over immediate results, or use case landscape is unexplored."
+        },
+        {
+          "question": "Who should lead the use case cultivation process?",
+          "options": [
+            "Centralized AI/Innovation team driving top-down identification",
+            "Distributed business unit owners with bottom-up discovery",
+            "Hybrid model with central coordination and local ownership"
+          ],
+          "criteria": "Choose CENTRALIZED if: AI expertise is concentrated, consistency is critical, or business units lack capacity. Choose DISTRIBUTED if: domain expertise is essential, adoption requires local buy-in, or organization is highly decentralized. Choose HYBRID (recommended) for most medium-to-large organizations to balance expertise with relevance."
+        },
+        {
+          "question": "What threshold should trigger moving a use case from cultivation to acceleration?",
+          "options": [
+            "Executive approval and budget allocation secured",
+            "Prototype demonstrates technical feasibility",
+            "Business case shows >20% efficiency gain or >$100K annual value",
+            "Champion commits dedicated implementation time"
+          ],
+          "criteria": "Require ALL four conditions for high-stakes implementations. Require any TWO for low-risk experiments. Adjust financial threshold based on organization size and industry."
+        },
+        {
+          "question": "How do we handle use cases that stall in the acceleration pipeline?",
+          "options": [
+            "Pause and reassign resources after 60 days of no progress",
+            "Escalate to executive sponsor for blocker resolution",
+            "Downgrade to learning experiment with reduced scope",
+            "Terminate and conduct retrospective"
+          ],
+          "criteria": "If technical blockers exist: ESCALATE or PAUSE. If business value becomes unclear: DOWNGRADE or TERMINATE. If resource constraints emerge: PAUSE with explicit restart conditions. Always conduct retrospective to capture learnings before closing."
+        },
+        {
+          "question": "Should we build custom solutions or adopt vendor/platform approaches?",
+          "options": [
+            "Build custom using internal resources and existing tools",
+            "Adopt vendor solutions with implementation support",
+            "Platform approach with low-code/no-code tools"
+          ],
+          "criteria": "Choose BUILD if: use case is highly specific, internal capability exists, and long-term maintenance is feasible. Choose VENDOR if: common use case, speed is critical, or lacks internal expertise. Choose PLATFORM if: enabling broader access is strategic goal and use cases are workflow-automation focused."
+        },
+        {
+          "question": "When should we declare the 'desert' resolved and transition to steady-state operations?",
+          "options": [
+            "When application rate reaches 60%+ of trained employees",
+            "When 10+ use cases are in production with measured value",
+            "When business units independently generate and implement use cases",
+            "When AI is embedded in standard operating procedures"
+          ],
+          "criteria": "Require metrics-based threshold (option 1 or 2) PLUS cultural indicator (option 3 or 4). Desert is resolved when both quantitative adoption and qualitative self-sufficiency are achieved. Typical timeframe: 6-18 months depending on organization size."
+        }
+      ],
+      "risk_mitigation": [
+        "Risk: Use case identification produces only low-value applications \u2192 Mitigation: Involve senior leaders in discovery workshops to surface strategic priorities; use '10x improvement' lens to filter ideas; analyze competitor AI implementations for inspiration",
+        "Risk: Implementation stalls due to technical complexity \u2192 Mitigation: Establish technical office hours with AI/ML experts; create pre-approved tool stack to reduce evaluation paralysis; partner with vendors for proof-of-concept support",
+        "Risk: Early pilots fail and damage credibility \u2192 Mitigation: Set explicit 'learning experiment' framing for first 3 pilots; celebrate insights from failures; choose first use case with high probability of success (proven elsewhere)",
+        "Risk: Resource constraints prevent parallel implementation \u2192 Mitigation: Sequence use cases with staggered starts; secure dedicated implementation capacity (not just 'spare time'); consider external contractors for specialized needs",
+        "Risk: Success cases don't scale beyond initial team \u2192 Mitigation: Build replication playbooks during pilot; identify 'fast follower' teams during planning; create internal case studies with metrics; establish peer mentorship program",
+        "Risk: Organizational antibodies reject AI implementations \u2192 Mitigation: Engage change management from day one; identify and empower local champions; address job security concerns transparently; demonstrate augmentation not replacement",
+        "Risk: Governance and compliance barriers block deployment \u2192 Mitigation: Include legal/compliance in use case evaluation phase; create expedited review process for low-risk applications; develop AI governance framework in parallel",
+        "Risk: Measurement framework shows no ROI \u2192 Mitigation: Expand metrics beyond efficiency to include quality, speed, employee satisfaction; allow 6-month maturity period before final evaluation; ensure baseline data captured pre-implementation",
+        "Risk: Framework becomes bureaucratic and slows innovation \u2192 Mitigation: Implement 'fast lane' for low-risk experiments; delegate approval authority; review process quarterly and eliminate non-value steps; maintain 80/20 rule focus",
+        "Risk: Leadership loses patience before results materialize \u2192 Mitigation: Establish realistic 6-12 month timeline expectations upfront; provide monthly visible progress updates; generate early small wins; connect to strategic initiatives for sustained executive attention"
+      ]
     }
   },
   {
@@ -476,10 +938,108 @@
       "metrics": []
     },
     "actionability": {
-      "decision_tree": "Decision tree generation failed",
-      "implementation_checklist": [],
-      "decision_points": [],
-      "risk_mitigation": []
+      "decision_tree": "IF data exists in 3+ disconnected sources THEN proceed with framework ELSE consider simpler integration\n  IF THEN assess data volume and complexity\n    IF high volume (>10K records) OR complex relationships THEN use phased migration approach\n    ELSE use direct bulk migration\n  IF THEN evaluate data quality\n    IF data quality <80% THEN implement cleaning layer before migration\n    ELSE proceed with direct migration\n\nIF stakeholders need immediate access THEN prioritize high-value data sources first\nELSE follow natural dependency order\n\nIF real-time synchronization required THEN implement API-based integration\nELSE use scheduled batch processes\n\nIF compliance/audit requirements exist THEN add versioning and lineage tracking\nELSE implement standard logging only\n\nIF enrichment sources are stable THEN automate enrichment layer\nELSE use semi-automated review process",
+      "implementation_checklist": [
+        "\u2610 Define project scope and success metrics",
+        "\u2610 Inventory all existing data sources (systems, databases, files, APIs)",
+        "\u2610 Map data relationships and dependencies between sources",
+        "\u2610 Document current data formats, schemas, and structures",
+        "\u2610 Assess data quality baselines for each source",
+        "\u2610 Identify data owners and stakeholders for each source",
+        "\u2610 Select or provision central repository platform",
+        "\u2610 Design unified data schema/model for consolidated repository",
+        "\u2610 Establish data governance policies and access controls",
+        "\u2610 Create data mapping documentation (source \u2192 target)",
+        "\u2610 Develop data transformation rules and business logic",
+        "\u2610 Build or configure ETL/integration pipelines",
+        "\u2610 Implement data validation and quality checks",
+        "\u2610 Conduct pilot migration with subset of data",
+        "\u2610 Validate pilot results with stakeholders",
+        "\u2610 Execute initial bulk data migration",
+        "\u2610 Verify data integrity post-migration",
+        "\u2610 Identify enrichment data sources and APIs",
+        "\u2610 Define enrichment rules and priority layers",
+        "\u2610 Implement first enrichment layer (critical metadata)",
+        "\u2610 Implement second enrichment layer (contextual details)",
+        "\u2610 Implement third enrichment layer (derived insights)",
+        "\u2610 Set up ongoing synchronization schedules",
+        "\u2610 Create monitoring dashboards for data quality",
+        "\u2610 Document processes and create runbooks",
+        "\u2610 Train users on accessing consolidated data",
+        "\u2610 Establish feedback loop for continuous improvement",
+        "\u2610 Plan decommissioning strategy for legacy sources"
+      ],
+      "decision_points": [
+        {
+          "question": "Should we migrate all data sources simultaneously or phase the implementation?",
+          "options": [
+            "Simultaneous migration (Big Bang)",
+            "Phased migration by source priority",
+            "Phased migration by data domain"
+          ],
+          "criteria": "Choose simultaneous if: sources <5, downtime acceptable, tight deadline. Choose phased by priority if: need quick wins, limited resources. Choose phased by domain if: complex interdependencies, multiple business units involved."
+        },
+        {
+          "question": "What level of data transformation should occur during migration?",
+          "options": [
+            "Minimal (preserve source formats)",
+            "Moderate (standardize key fields)",
+            "Comprehensive (full normalization)"
+          ],
+          "criteria": "Choose minimal if: need speed, plan post-migration cleanup. Choose moderate if: balancing speed with usability. Choose comprehensive if: data quality critical, time available, avoiding technical debt."
+        },
+        {
+          "question": "How should we handle data conflicts from multiple sources?",
+          "options": [
+            "Source priority hierarchy",
+            "Most recent timestamp wins",
+            "Manual review and resolution",
+            "Preserve all versions with metadata"
+          ],
+          "criteria": "Choose hierarchy if: clear authoritative sources exist. Choose timestamp if: temporal accuracy paramount. Choose manual if: conflicts rare (<5%). Choose version preservation if: audit requirements or high-stakes data."
+        },
+        {
+          "question": "What enrichment strategy should we employ?",
+          "options": [
+            "Real-time enrichment on query",
+            "Scheduled batch enrichment",
+            "Event-triggered enrichment",
+            "Hybrid approach"
+          ],
+          "criteria": "Choose real-time if: data changes frequently, fresh data critical. Choose batch if: enrichment computationally expensive, daily refresh sufficient. Choose event-triggered if: specific actions require enrichment. Choose hybrid for different data types with varying requirements."
+        },
+        {
+          "question": "Should we maintain connections to source systems or create a standalone repository?",
+          "options": [
+            "Live connections (federated)",
+            "Periodic sync (replicated)",
+            "One-time migration (archived)"
+          ],
+          "criteria": "Choose live if: sources remain active, real-time critical. Choose periodic if: sources active but eventual consistency acceptable. Choose one-time if: decommissioning sources, historical analysis only."
+        },
+        {
+          "question": "How do we handle personally identifiable information (PII) and sensitive data?",
+          "options": [
+            "Encrypt in transit and at rest",
+            "Tokenize sensitive fields",
+            "Separate sensitive data to secure zone",
+            "Anonymize/pseudonymize"
+          ],
+          "criteria": "Choose encryption if: compliance requires, access controlled. Choose tokenization if: need referential integrity without exposure. Choose separation if: different access tiers needed. Choose anonymization if: analytics use case, individual identification unnecessary."
+        }
+      ],
+      "risk_mitigation": [
+        "Data Loss Risk: Implement comprehensive backup before migration, validate record counts at each stage, maintain source systems in read-only mode during transition period",
+        "Data Quality Degradation: Establish quality metrics pre-migration, implement automated validation rules, create exception handling workflows for data that fails quality checks",
+        "Performance Issues: Conduct load testing with production-scale data, implement indexing strategy before go-live, plan for incremental enrichment to avoid overload",
+        "Integration Failures: Build retry mechanisms with exponential backoff, implement circuit breakers for external enrichment sources, create fallback procedures for critical pipelines",
+        "Scope Creep: Lock requirements after design phase, implement change control process, maintain separate backlog for future enhancements",
+        "Stakeholder Resistance: Involve key users in design phase, demonstrate value with pilot use cases, provide comprehensive training and documentation, maintain support channels",
+        "Inconsistent Metadata: Establish data dictionary early, implement metadata management tool, assign data stewards for each domain, conduct regular metadata audits",
+        "Compliance Violations: Document data lineage throughout pipeline, implement role-based access controls, maintain audit logs of all data access and modifications, conduct privacy impact assessment",
+        "Technical Debt: Design for scalability from start, document all customizations and workarounds, allocate time for refactoring in roadmap, conduct regular architecture reviews",
+        "Dependency on Key Personnel: Create comprehensive documentation, implement peer review processes, cross-train team members, use version control for all configurations and code"
+      ]
     }
   },
   {
@@ -585,10 +1145,98 @@
       "metrics": []
     },
     "actionability": {
-      "decision_tree": "Decision tree generation failed",
-      "implementation_checklist": [],
-      "decision_points": [],
-      "risk_mitigation": []
+      "decision_tree": "IF [need to analyze complex/unstructured data] THEN [evaluate framework applicability]\n  IF [data volume > manual capacity AND requires deep analysis] THEN [proceed with framework]\n    IF [single data source] THEN [start with Component 1: Data Collection]\n    ELSE IF [multiple heterogeneous sources] THEN [create data mapping schema first]\n  ELSE [consider simpler single-prompt approach]\nIF [proceeding with framework] THEN [assess AI model availability]\n  IF [have access to 2+ AI models] THEN [design multi-model sequence]\n  ELSE IF [single model only] THEN [adapt to iterative refinement within same model]\nIF [designing prompt sequence] THEN [determine analysis complexity]\n  IF [exploratory analysis needed] THEN [start with broad extraction prompts \u2192 narrowing sequence]\n  ELSE IF [targeted insights needed] THEN [start with specific query prompts \u2192 validation sequence]\nIF [execution phase] THEN [monitor output quality]\n  IF [output quality degrading] THEN [insert clarification prompt in sequence]\n  ELSE IF [output exceeds expectations] THEN [document successful prompt pattern]\nIF [results complete] THEN [evaluate comprehensiveness]\n  IF [gaps identified] THEN [design supplementary prompt branch]\n  ELSE [proceed to synthesis and documentation]",
+      "implementation_checklist": [
+        "\u2610 Define clear analytical objectives and success criteria",
+        "\u2610 Inventory available data sources and formats",
+        "\u2610 Assess data quality and identify preprocessing needs",
+        "\u2610 Standardize data formatting (consistent structure, clean encoding)",
+        "\u2610 Select 2-3 AI models based on complementary strengths",
+        "\u2610 Test model access and token/context limits",
+        "\u2610 Design initial prompt sequence (3-5 prompts minimum)",
+        "\u2610 Create prompt templates with variable placeholders",
+        "\u2610 Establish prompt versioning system for iteration tracking",
+        "\u2610 Define handoff points between prompts (what output feeds next input)",
+        "\u2610 Create validation checkpoints after each prompt execution",
+        "\u2610 Execute first prompt with representative data sample",
+        "\u2610 Review output quality and refine prompt if needed",
+        "\u2610 Document prompt modifications and rationale",
+        "\u2610 Execute full prompt sequence across dataset",
+        "\u2610 Capture all intermediate outputs for traceability",
+        "\u2610 Cross-reference outputs between different AI models",
+        "\u2610 Identify contradictions or gaps in analysis",
+        "\u2610 Design refinement prompts to address gaps",
+        "\u2610 Synthesize final comprehensive analysis",
+        "\u2610 Document complete prompt sequence for reuse",
+        "\u2610 Create framework application report with lessons learned"
+      ],
+      "decision_points": [
+        {
+          "question": "Which AI models should I select for the sequence?",
+          "options": [
+            "Models with different training focuses (e.g., analytical vs. creative)",
+            "Same model family with different versions",
+            "Models optimized for different tasks (summarization, extraction, reasoning)"
+          ],
+          "criteria": "Choose based on: (1) Task requirements - match model strengths to analysis types needed, (2) Complementarity - select models that compensate for each other's weaknesses, (3) Accessibility - ensure reliable API/interface access, (4) Context window - larger windows for comprehensive data, (5) Cost-benefit ratio for your use case"
+        },
+        {
+          "question": "How many prompts should be in my sequence?",
+          "options": [
+            "3-5 prompts for straightforward analysis",
+            "6-10 prompts for complex multi-dimensional analysis",
+            "10+ prompts for exhaustive research-grade analysis"
+          ],
+          "criteria": "Decide based on: (1) Analytical depth required - more dimensions = more prompts, (2) Data complexity - unstructured data needs more extraction steps, (3) Stakeholder expectations - precision requirements drive iteration needs, (4) Time/resource constraints - balance thoroughness with feasibility, (5) Diminishing returns - stop when additional prompts yield <10% new insights"
+        },
+        {
+          "question": "Should I process data in parallel or sequential batches?",
+          "options": [
+            "Sequential processing (one complete analysis before next)",
+            "Parallel processing (multiple analyses simultaneously)",
+            "Hybrid approach (sequential stages with parallel execution within stages)"
+          ],
+          "criteria": "Choose based on: (1) Data interdependencies - sequential if later analysis depends on earlier insights, (2) Resource availability - parallel if you have API quota/time to spare, (3) Quality control needs - sequential allows prompt refinement between batches, (4) Data volume - parallel for large datasets to save time, (5) Learning curve - sequential for first implementation to understand patterns"
+        },
+        {
+          "question": "When should I refine vs. restart a prompt in the sequence?",
+          "options": [
+            "Refine the existing prompt with additional instructions",
+            "Restart with completely redesigned prompt",
+            "Insert new intermediate prompt in the sequence"
+          ],
+          "criteria": "Refine when: output is 60-80% correct and needs clarification. Restart when: fundamental misunderstanding or <50% useful output. Insert new prompt when: specific gap appears that wasn't anticipated in original design. Evaluate refinement success after 2-3 attempts; if no improvement, restart."
+        },
+        {
+          "question": "How do I handle contradictions between different AI model outputs?",
+          "options": [
+            "Prioritize output from model best suited to that specific task",
+            "Create synthesis prompt asking AI to reconcile differences",
+            "Apply human judgment to select most credible analysis",
+            "Design validation prompt with structured fact-checking"
+          ],
+          "criteria": "Apply this hierarchy: (1) Check for factual errors using external validation, (2) Evaluate reasoning quality - choose deeper analytical logic, (3) Consider model specialization - technical model for technical questions, (4) Use synthesis prompt for nuanced disagreements, (5) Apply domain expertise for final judgment on critical decisions"
+        },
+        {
+          "question": "What level of data preprocessing is needed before AI analysis?",
+          "options": [
+            "Minimal (raw data with basic formatting)",
+            "Moderate (cleaned, structured, labeled)",
+            "Extensive (normalized, enriched, validated)"
+          ],
+          "criteria": "Minimal when: data is already well-structured, exploratory phase, testing framework feasibility. Moderate when: production implementation, mixed data quality, standard analysis needs. Extensive when: mission-critical analysis, poor source data quality, complex integration requirements, regulatory compliance needed. General rule: invest preprocessing time proportional to analysis stakes and reuse frequency"
+        }
+      ],
+      "risk_mitigation": [
+        "Risk: Data quality issues compromise analysis accuracy | Mitigation: Implement data validation prompts as first sequence step; include 'confidence level' requests in prompts; cross-validate critical findings across multiple models; maintain human review checkpoints for high-stakes decisions",
+        "Risk: Prompt drift causing inconsistent outputs across sequence | Mitigation: Version control all prompts with change documentation; establish baseline outputs for regression testing; use structured output formats (JSON, tables) to enforce consistency; create prompt templates with locked core instructions",
+        "Risk: Context window limitations truncating important data | Mitigation: Pre-analyze data size and chunk appropriately; design prompts to work with data segments; implement summarization steps between prompts; prioritize most critical data elements; use models with larger context windows for consolidation steps",
+        "Risk: Model hallucination introducing false information | Mitigation: Design prompts requiring citation of source data; implement verification prompts that check claims against original data; use multiple models as cross-validation; flag novel claims not present in source data; maintain source traceability throughout pipeline",
+        "Risk: Over-reliance on AI missing critical human insights | Mitigation: Schedule human review gates at key decision points; design prompts that surface uncertainty and edge cases; maintain domain expert involvement in prompt design; document AI limitations for each analysis type; create escalation criteria for human intervention",
+        "Risk: Excessive costs from inefficient prompt iteration | Mitigation: Test prompts on small data samples first; monitor token usage per prompt; optimize prompt length while maintaining clarity; cache and reuse intermediate results; establish cost budgets per analysis; use tiered model approach (cheaper models for initial processing)",
+        "Risk: Loss of analytical thread across long sequences | Mitigation: Implement mandatory summary prompts every 3-5 steps; create 'state tracking' outputs that maintain context; design each prompt with explicit reference to prior steps; maintain visual sequence map; use consistent naming conventions for outputs; build synthesis prompt at sequence end",
+        "Risk: Framework becomes too rigid for adaptive analysis | Mitigation: Design modular prompt sequences with optional branches; create prompt libraries for common variations; establish clear criteria for sequence modifications; maintain 'exploratory prompt' options for unexpected findings; document when to deviate from standard sequence; balance standardization with flexibility"
+      ]
     }
   },
   {
@@ -689,10 +1337,113 @@
       "metrics": []
     },
     "actionability": {
-      "decision_tree": "Decision tree generation failed",
-      "implementation_checklist": [],
-      "decision_points": [],
-      "risk_mitigation": []
+      "decision_tree": "START: Evaluate a professional relationship\n\nIF relationship is NEW THEN\n  \u2192 Assess initial tier placement:\n    IF they directly impact career/business success OR meet weekly/monthly THEN assign Tier 1\n    ELSE IF they provide strategic value OR share industry/goals THEN assign Tier 2\n    ELSE assign Tier 3\n  \u2192 Add to CRM/tracking system\n  \u2192 Schedule first touchpoint\n\nIF performing QUARTERLY REVIEW THEN\n  \u2192 For each contact, evaluate:\n    IF interaction frequency has increased AND strategic value confirmed THEN promote up one tier\n    ELSE IF no interaction in 6+ months AND diminishing relevance THEN demote down one tier\n    ELSE maintain current tier\n  \u2192 Adjust contact schedules accordingly\n\nIF contact reaches out unexpectedly THEN\n  \u2192 Respond within tier-appropriate timeframe (Tier 1: same day, Tier 2: 48 hours, Tier 3: 1 week)\n  \u2192 IF conversation reveals increased strategic importance THEN flag for tier review\n  \u2192 Log interaction and insights\n\nIF monthly touchpoint is DUE THEN\n  \u2192 Check tier assignment:\n    IF Tier 1 THEN initiate personalized 1-on-1 contact (call, coffee, meaningful email)\n    ELSE IF Tier 2 THEN send valuable content, comment on their updates, or group engagement\n    ELSE IF Tier 3 THEN engage with social media posts or annual check-in only\n  \u2192 Document interaction and schedule next touchpoint\n\nIF relationship shows SIGNS OF STRAIN THEN\n  \u2192 IF Tier 1 THEN address immediately with direct conversation\n  \u2192 IF Tier 2 THEN assess if worth salvaging, then reach out thoughtfully\n  \u2192 IF Tier 3 THEN allow natural fade unless they're uniquely valuable\n\nIF considering MOVING SOMEONE TO TIER 1 THEN\n  \u2192 Verify you have capacity (max 8-12 Tier 1 contacts recommended)\n  \u2192 IF at capacity THEN evaluate if someone should move to Tier 2 first\n  \u2192 Confirm sustainable commitment level before promoting\n\nEND: Document decision and set calendar reminders",
+      "implementation_checklist": [
+        "\u2610 Audit existing professional relationships (create master list of all significant contacts)",
+        "\u2610 Define your specific criteria for each tier based on career/business goals",
+        "\u2610 Set tier capacity limits (suggested: 8-12 Tier 1, 20-30 Tier 2, unlimited Tier 3)",
+        "\u2610 Choose tracking system (CRM, spreadsheet, or contact management tool)",
+        "\u2610 Categorize each relationship into initial tier placement",
+        "\u2610 Document 2-3 key facts about each Tier 1 & 2 contact (interests, goals, recent life events)",
+        "\u2610 Create tier-specific contact templates (email scripts, conversation starters)",
+        "\u2610 Set up contact frequency schedules: Tier 1 (monthly), Tier 2 (quarterly), Tier 3 (annual)",
+        "\u2610 Block calendar time for relationship maintenance (e.g., 'Networking Friday' 1st of month)",
+        "\u2610 Establish touchpoint variety menu (coffee meetings, phone calls, content sharing, events)",
+        "\u2610 Create a value-add repository (articles, introductions, resources to share)",
+        "\u2610 Set quarterly review date to reassess tier placements",
+        "\u2610 Define success metrics (response rates, opportunities generated, relationship quality)",
+        "\u2610 Plan first month of outreach for all Tier 1 contacts",
+        "\u2610 Set up automated reminders for scheduled touchpoints",
+        "\u2610 Create privacy/confidentiality protocols for sensitive relationship information",
+        "\u2610 Develop graceful transition scripts for tier changes",
+        "\u2610 Establish post-interaction logging habit (notes, outcomes, next steps)"
+      ],
+      "decision_points": [
+        {
+          "question": "How many Tier 1 relationships should I maintain?",
+          "options": [
+            "5-8 contacts (focused, deep engagement)",
+            "10-12 contacts (balanced approach)",
+            "15+ contacts (extensive network)"
+          ],
+          "criteria": "Consider available time, energy levels, and relationship intensity you can genuinely sustain. Quality over quantity is critical for Tier 1. Most professionals can only maintain 8-12 truly deep relationships before quality deteriorates. Calculate: hours per month available \u00d7 2-3 hours per Tier 1 contact."
+        },
+        {
+          "question": "Should I tell people what tier they're in?",
+          "options": [
+            "Never disclose tier classifications",
+            "Share approach conceptually without specific assignments",
+            "Be fully transparent with Tier 1 contacts"
+          ],
+          "criteria": "RECOMMENDED: Never disclose specific tiers\u2014this is an internal management system. You may share that you're 'being more intentional about staying connected with key people' but avoid making anyone feel categorized or ranked. Exception: You might tell Tier 1 contacts 'You're one of my most valued professional relationships' without mentioning a system."
+        },
+        {
+          "question": "How do I tier a relationship that's both personal and professional?",
+          "options": [
+            "Create separate entries for personal and professional aspects",
+            "Tier based on the dominant relationship type",
+            "Automatically assign to Tier 1 regardless of professional value"
+          ],
+          "criteria": "If the relationship is genuinely hybrid, tier based on professional value but allow personal connection to inform touchpoint style. Close personal friends don't need professional networking tactics. If they're primarily personal but offer professional value, maintain organic personal contact rather than forcing them into a professional networking cadence."
+        },
+        {
+          "question": "When should I move someone from Tier 2 to Tier 1?",
+          "options": [
+            "When strategic importance increases significantly",
+            "When natural interaction frequency increases organically",
+            "When they explicitly request closer collaboration"
+          ],
+          "criteria": "Promote to Tier 1 when: (1) They gain ability to directly impact your success, (2) You're collaborating on important initiatives, (3) They've consistently provided exceptional value, (4) You have genuine capacity for deeper engagement. Verify you can sustain monthly+ meaningful contact before promoting. One interaction spike doesn't warrant promotion\u2014look for sustained pattern over 2-3 months."
+        },
+        {
+          "question": "How do I handle a Tier 1 contact who isn't reciprocating engagement?",
+          "options": [
+            "Continue outreach\u2014relationships have seasons",
+            "Demote to Tier 2 after 3 unreturned contacts",
+            "Have a direct conversation about the relationship"
+          ],
+          "criteria": "First, assess context: Are they going through major life/career changes? After 2-3 unreturned quality outreach attempts over 3 months: (1) Make one direct attempt: 'I've tried to connect\u2014are you overwhelmed or should I give you space?' (2) If no response, demote to Tier 2 for 6 months. (3) Reassess based on their situation. Important: Tier 1 isn't about neediness\u2014it's about mutual value. Not all relationships warrant equal investment."
+        },
+        {
+          "question": "Should I use different communication channels for different tiers?",
+          "options": [
+            "Yes\u2014reserve premium channels (phone, in-person) for Tier 1",
+            "No\u2014use whatever channel each person prefers",
+            "Mix approaches based on context and message urgency"
+          ],
+          "criteria": "RECOMMENDED: Tier 1 gets priority access to richer communication (calls, video, in-person) and faster response times. Tier 2 can be email, thoughtful LinkedIn engagement, or occasional calls. Tier 3 is primarily social media engagement and annual emails. However, always adapt to individual preferences\u2014if a Tier 1 contact hates phone calls, don't force it. The tier determines priority and frequency, not necessarily channel."
+        },
+        {
+          "question": "What if someone I placed in Tier 3 suddenly becomes professionally critical?",
+          "options": [
+            "Immediately promote and acknowledge the gap",
+            "Gradually increase contact over 2-3 months",
+            "Treat it as a new relationship restart"
+          ],
+          "criteria": "If circumstances change dramatically: (1) Acknowledge the time gap authentically: 'I realize we haven't connected in a while\u2014I'd love to change that.' (2) Promote to appropriate tier immediately. (3) Increase contact gradually unless urgency demands otherwise. (4) Don't fabricate continuity that doesn't exist. People appreciate authentic reconnection over forced pretense of ongoing relationship."
+        },
+        {
+          "question": "How do I prevent the system from feeling transactional or manipulative?",
+          "options": [
+            "Focus on genuine value exchange, not just maintenance",
+            "Personalize every interaction with specific context",
+            "Combine systematic planning with authentic spontaneity"
+          ],
+          "criteria": "The framework is a reminder system, not a script for authenticity. Combat transactional feelings by: (1) Genuinely caring about person's success, not just your benefit. (2) Personalizing every touchpoint\u2014never use template without customization. (3) Sometimes reaching out with no ask, only to give. (4) Allowing spontaneous contact outside the schedule. (5) Sharing vulnerable/authentic updates, not just highlights. If it feels manipulative, you're focused on extraction rather than mutual value."
+        }
+      ],
+      "risk_mitigation": [
+        "Risk: Over-structuring relationships and losing authenticity \u2192 Mitigation: Use the framework as a safety net (ensuring no one falls through the cracks), not a rigid script. Allow spontaneous interactions to happen naturally and only use tier reminders when you realize time has passed without contact. Personalize every touchpoint significantly.",
+        "Risk: Creating unsustainable commitments in Tier 1 \u2192 Mitigation: Start conservatively with fewer Tier 1 contacts (5-8) and only add after proving you can maintain quality. Set realistic contact frequencies (monthly is minimum, not maximum). Build in buffer weeks for overwhelm. It's better to have fewer, well-maintained relationships than many neglected ones.",
+        "Risk: People discovering they're 'tiered' and feeling offended \u2192 Mitigation: Never discuss the framework using tier language externally. Keep all documentation private and password-protected. If asked about your networking approach, describe it as 'being intentional about staying connected with people who matter' without ranking language. Never compare contacts to each other.",
+        "Risk: Tier classifications becoming outdated as situations change \u2192 Mitigation: Schedule mandatory quarterly reviews (add to calendar as recurring non-negotiable appointment). Watch for signals: changed job, life event, increased/decreased contact frequency, shifts in strategic alignment. Allow mid-quarter adjustments for significant changes. Document reasons for tier changes.",
+        "Risk: Neglecting Tier 2 and 3 relationships entirely \u2192 Mitigation: Set minimum viable touchpoints for all tiers. Tier 2: minimum quarterly value-add or engagement. Tier 3: annual check-in or consistent social media engagement. Use batching techniques (send 5 Tier 2 check-ins in one focused hour). Remember: today's Tier 3 could be tomorrow's Tier 1.",
+        "Risk: Mixing professional tiering with personal worth/affection \u2192 Mitigation: Remember tiers reflect strategic professional priority and time capacity, not personal affection or human value. You may deeply like a Tier 3 contact but lack professional overlap. Conversely, some Tier 1 contacts may be professionally critical but not close friends. Separate professional networking from friendship.",
+        "Risk: System becoming burdensome administrative work \u2192 Mitigation: Keep tracking simple (spreadsheet or basic CRM). Spend 90% of time on actual relationship building, 10% on documentation. Batch administrative tasks (update all notes monthly). Use calendar reminders rather than constant system checking. If system takes more than 30 minutes weekly to maintain, simplify it.",
+        "Risk: One-sided relationships where you're always initiating \u2192 Mitigation: Track reciprocity patterns\u2014if someone never initiates after 4-5 quality outreach attempts, demote a tier. Your energy is finite. Tier 1 should be largely reciprocal. Some Tier 2/3 relationships may be asymmetric (mentors, industry leaders) which is fine if the value justifies it. Don't waste Tier 1 energy on non-reciprocal relationships.",
+        "Risk: Treating life transitions (job changes, relocations) inadequately \u2192 Mitigation: Flag major life events in tracking system. Temporarily increase contact frequency during transitions (Tier 2 may get Tier 1 attention during their career change). These moments strengthen relationships\u2014be present. Set alerts for typical transition seasons (graduation time, year-end job changes). Proactive support during transitions builds lasting goodwill.",
+        "Risk: Cultural differences in communication expectations \u2192 Mitigation: Research and respect cultural communication norms for international contacts. Some cultures expect more frequent contact, others value space. Adjust tier touchpoint frequencies based on individual and cultural preferences. When unsure, ask directly: 'What's the best way to stay connected with you?' Document preferences in tracking system."
+      ]
     }
   }
 ]
